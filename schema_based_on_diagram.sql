@@ -41,8 +41,3 @@ CREATE TABLE invoice_items (
   FOREIGN KEY(treatment_id) REFERENCES treatments(id), PRIMARY KEY(id) ); 
   (email); 
   
-  
-  
-  
-  
-  
