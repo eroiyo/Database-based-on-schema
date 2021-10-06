@@ -30,3 +30,19 @@ name VARCHAR(100),
 PRIMARY KEY(id)
 );
 
+CREATE TABLE invoice_items ( 
+  id INT GENERATED ALWAYS AS IDENTITY,
+  unit_prices FLOAT NOT NULL, 
+  quantity INT NOT NULL, 
+  total_price FLOAT NOT NULL, 
+  invoice_id INT NOT NULL, 
+  treatment_id INT NOT NULL, 
+  FOREIGN KEY (invoice_id) REFERENCES invoice(id),
+  FOREIGN KEY(treatment_id) REFERENCES treatments(id), PRIMARY KEY(id) ); 
+  (email); 
+  
+  
+  
+  
+  
+  
